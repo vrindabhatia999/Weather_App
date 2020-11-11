@@ -63,10 +63,10 @@ function getWeather(latitude,longitude){
 
 function displayWeather(){
     // iconElement.innerHTML=`<img src="${weather.iconId}.svg"/>`;
-    tempElement.innerHTML="<h5>Temperature:</h5>"+`${weather.temperature.value}°<span>C</span>`;
-    descElement.innerHTML="<h5>Weather description:</h5>"+weather.desc;
-    locationElement.innerHTML="<h5>Location:</h5>"+`${weather.city},${weather.country}`;
-    wind.innerHTML="<h5>Wind Speed:</h5>"+weather.wind;
+    tempElement.innerHTML="<h5>Temperature:</h5>"+`<h6>${weather.temperature.value}°<span>C</span></h6>`;
+    descElement.innerHTML="<h5>Weather description:</h5>"+"<h6>"+weather.desc+"</h6>";
+    locationElement.innerHTML="<h5>Location:</h5>"+`<h6>${weather.city},${weather.country}</h6>`;
+    wind.innerHTML="<h5>Wind Speed:</h5>"+"<h6>"+weather.wind+"</h6>";
 
 }
 

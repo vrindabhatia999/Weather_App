@@ -3,3 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background: radial-gradient(rgb(162, 162, 228),white);
+    background-size: cover;
+    background-attachment: fixed;
+}
