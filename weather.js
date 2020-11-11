@@ -62,5 +62,13 @@ function getWeather(latitude,longitude){
 function displayWeather(){
     iconElement.innerHTML=`<img src="${weather.iconId}.svg"/>`;
     tempElement.innerHTML=`${weather.temperature.value}*<span>C</span>`;
+    descElement.innerHTML=weather.description;
+    locationElement.innerHTML=`${weather.city},${weather.country}`;
+
+}
+
+//c to f
+function celsiusToFahrenheit(temperature){
+    return (temperature*9/5)+32;
 
 }
