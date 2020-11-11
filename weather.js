@@ -47,7 +47,7 @@ function getWeather(latitude,longitude){
        .then(function(data){
            weather.temperature.value=Math.floor(data.main.temp -KELVIN);
            weather.description=data.weather[0].icon;
-           weather.iconId=data.weather[0].icon;
+        //    weather.iconId=data.weather[0].icon;
            weather.city=data.name;
            weather.country=data.sys.country;
 
@@ -60,7 +60,7 @@ function getWeather(latitude,longitude){
 }
 
 function displayWeather(){
-    iconElement.innerHTML=`<img src="${weather.iconId}.svg"/>`;
+    // iconElement.innerHTML=`<img src="${weather.iconId}.svg"/>`;
     tempElement.innerHTML=`${weather.temperature.value}*<span>C</span>`;
     descElement.innerHTML=weather.description;
     locationElement.innerHTML=`${weather.city},${weather.country}`;
