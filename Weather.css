@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background: radial-gradient(rgb(205, 143, 218),white);
+    background: radial-gradient(rgb(15, 182, 118),white);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -17,8 +17,15 @@ body{
 .weather-icon{
      margin-left: 30%;
      margin-right: 30%;
+     animation: weather-icon 2s linear infinite;
+}
+@keyframes weather-icon{
+    100%{
+        transform: scale(1.1) translateX(30px);
+    }
 }
 .app-title:hover{
     transform: scale(1.1);
     transition: 0.5s ease;
 }
+ 
