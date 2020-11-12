@@ -14,3 +14,7 @@ body{
     background-size: 100% 85%;
     background-repeat: no-repeat;
 }
+.weather-icon{
+     margin-left: 30%;
+     margin-right: 30%;
+}
