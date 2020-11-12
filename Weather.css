@@ -9,7 +9,7 @@ body{
     background-attachment: fixed;
 }
 .d{
-    /* background: radial-gradient(rgb(233, 216, 240),white); */
+    /* background: radial-gradient(rgb(15, 182, 118),white); */
     background-attachment: fixed;
     background-size: 100% 85%;
     background-repeat: no-repeat;
@@ -17,15 +17,20 @@ body{
 .weather-icon{
      margin-left: 30%;
      margin-right: 30%;
-     animation: weather-icon 2s linear infinite;
+     background-color: teal;
+     
 }
-@keyframes weather-icon{
-    100%{
-        transform: scale(1.1) translateX(30px);
-    }
+.weather-icon img{
+    animation: img1 3s ease infinite;
 }
 .app-title:hover{
     transform: scale(1.1);
     transition: 0.5s ease;
 }
+@keyframes img1{
+    100%{
+       transform: rotate(10deg) scale(1.01) translateX(20px);
+    }
+}
+
  
