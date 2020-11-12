@@ -9,7 +9,7 @@ body{
     background-attachment: fixed;
 }
 .d{
-    background: radial-gradient(rgb(233, 216, 240),white);
+    /* background: radial-gradient(rgb(233, 216, 240),white); */
     background-attachment: fixed;
     background-size: 100% 85%;
     background-repeat: no-repeat;

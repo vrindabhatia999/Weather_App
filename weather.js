@@ -5,6 +5,7 @@ const descElement=document.querySelector(".temperature-desc p");
 const locationElement=document.querySelector(".location p");
 const notificationElement=document.querySelector(".notification");
 const wind=document.querySelector(".temp-wind");
+const color=document.querySelector(".temp-col");
 
 //app data
 const weather={};
@@ -52,6 +53,7 @@ function getWeather(latitude,longitude){
            weather.country=data.sys.country;
            weather.wind=data.wind.speed;
            weather.desc=data.weather[0].description;
+           weather.col=data.weather[0].icon;
 
 
 
@@ -63,6 +65,7 @@ function getWeather(latitude,longitude){
 
 function displayWeather(){
     // iconElement.innerHTML=`<img src="${weather.iconId}.svg"/>`;
+    color.style.backgroundColor=`#${weather.col}`;
     tempElement.innerHTML="<h5>Temperature:</h5>"+`<h6>${weather.temperature.value}°<span>C</span></h6>`;
     descElement.innerHTML="<h5>Weather description:</h5>"+"<h6>"+weather.desc+"</h6>";
     locationElement.innerHTML="<h5>Location:</h5>"+`<h6>${weather.city},${weather.country}</h6>`;
