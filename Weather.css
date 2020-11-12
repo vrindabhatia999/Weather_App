@@ -17,7 +17,7 @@ body{
 .weather-icon{
      margin-left: 30%;
      margin-right: 30%;
-     background-color: teal;
+     background: radial-gradient(rgb(102, 158, 146),rgb(198, 178, 201));
      
 }
 .weather-icon img{
