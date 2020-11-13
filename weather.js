@@ -78,3 +78,6 @@ function celsiusToFahrenheit(temperature){
     return (temperature*9/5)+32;
 
 }
+
+var mist=document.getElementById('mist');
+mist.innerHTML="MIST";
