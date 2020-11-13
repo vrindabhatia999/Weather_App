@@ -1,8 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+ 
 body{
     background: radial-gradient(rgb(15, 182, 118),white);
     background-size: cover;
@@ -13,11 +9,12 @@ body{
     background-attachment: fixed;
     background-size: 100% 85%;
     background-repeat: no-repeat;
+    
 }
 .weather-icon{
      margin-left: 30%;
      margin-right: 30%;
-     background: radial-gradient(rgb(102, 158, 146),rgb(198, 178, 201));
+     /* background: radial-gradient(rgb(102, 158, 146),rgb(198, 178, 201)); */
      
 }
 .weather-icon img{
