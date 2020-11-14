@@ -81,6 +81,11 @@ function celsiusToFahrenheit(temperature){
 
 var mist=document.getElementById('mist');
 mist.innerHTML="MIST";
+mist.style.color='purple';
+mist.style.fontWeight='bold';
 
 var haze=document.getElementById('haze');
 haze.innerHTML="HAZE";
+haze.style.color='purple';
+haze.style.fontWeight='bold';
+
