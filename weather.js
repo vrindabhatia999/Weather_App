@@ -6,6 +6,7 @@ const locationElement=document.querySelector(".location p");
 const notificationElement=document.querySelector(".notification");
 const wind=document.querySelector(".temp-wind");
 const color=document.querySelector(".temp-col");
+const humidity=document.querySelector('.humidity');
 
 //app data
 const weather={};
@@ -54,6 +55,8 @@ function getWeather(latitude,longitude){
            weather.wind=data.wind.speed;
            weather.desc=data.weather[0].description;
            weather.col=data.weather[0].icon;
+           weather.humidity=data.main.humidity;
+
 
 
 
@@ -70,6 +73,7 @@ function displayWeather(){
     descElement.innerHTML="<h5>Weather description:</h5>"+"<h6>"+weather.desc+"</h6>";
     locationElement.innerHTML="<h5>Location:</h5>"+`<h6>${weather.city},${weather.country}</h6>`;
     wind.innerHTML="<h5>Wind Speed:</h5>"+"<h6>"+weather.wind+" "+"Kph"+"</h6>";
+    humidity.innerHTML="<h5>Humidity:</h5>"+"<h6>"+weather.humidity+" "+"%"+"</h6>";
 
 }
 
