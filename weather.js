@@ -93,3 +93,6 @@ haze.innerHTML="HAZE";
 haze.style.color='purple';
 haze.style.fontWeight='bold';
 
+var divO=document.createElement('div');
+document.body.appendChild(divO);
+
