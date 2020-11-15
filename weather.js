@@ -95,4 +95,7 @@ haze.style.fontWeight='bold';
 
 var divO=document.createElement('div');
 document.body.appendChild(divO);
+divO.innerHTML="<h4> Made By Vrinda</h4>";
+divO.style.marginLeft='70%';
+divO.style.marginTop='-4%';
 
