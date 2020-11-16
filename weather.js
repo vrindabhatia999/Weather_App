@@ -85,12 +85,12 @@ function celsiusToFahrenheit(temperature){
 
 var mist=document.getElementById('mist');
 mist.innerHTML="MIST";
-mist.style.color='purple';
+mist.style.color='teal';
 mist.style.fontWeight='bold';
 
 var haze=document.getElementById('haze');
 haze.innerHTML="HAZE";
-haze.style.color='purple';
+haze.style.color='teal';
 haze.style.fontWeight='bold';
 
 var divO=document.createElement('div');
