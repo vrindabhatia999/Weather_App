@@ -72,7 +72,7 @@ function displayWeather(){
     tempElement.innerHTML="<h5>Temperature 🌡️:</h5>"+`<h6>${weather.temperature.value}°<span>C</span></h6>`;
     descElement.innerHTML="<h5>Weather description:</h5>"+"<h6>"+weather.desc+"</h6>";
     locationElement.innerHTML="<h5>Location:</h5>"+`<h6>${weather.city},${weather.country}</h6>`;
-    wind.innerHTML="<h5>Wind Speed:</h5>"+"<h6>"+weather.wind+" "+"Kph"+"</h6>";
+    wind.innerHTML="<h5>Wind Speed 🌪️:</h5>"+"<h6>"+weather.wind+" "+"Kph"+"</h6>";
     humidity.innerHTML="<h5>Humidity:</h5>"+"<h6>"+weather.humidity+" "+"%"+"</h6>";
 
 }
