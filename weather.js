@@ -84,12 +84,12 @@ function celsiusToFahrenheit(temperature){
 }
 
 var mist=document.getElementById('mist');
-mist.innerHTML="MIST";
+mist.innerHTML="MIST 🌫️";
 mist.style.color='teal';
 mist.style.fontWeight='bold';
 
 var haze=document.getElementById('haze');
-haze.innerHTML="HAZE";
+haze.innerHTML="HAZE 🌥️";
 haze.style.color='teal';
 haze.style.fontWeight='bold';
 
